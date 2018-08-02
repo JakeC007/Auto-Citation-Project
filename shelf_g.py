@@ -1,3 +1,4 @@
+#Created by Jake Chanenson on 8/1/18 for use in the citation machine program. 
 class book(object):
     """class for single citation object"""
 
