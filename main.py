@@ -21,18 +21,18 @@ from shelf_g import *
 def main():
   print("Welcome to the citation generator. This program prints MLA style citations if you input an ISBN. Type 'bib' if you want a list of all stored entries. Type 'stop' to quit.\n"+"*"*100)
 
-  BS= []
+  BS= [] #stands for Book Shelf
   while True:
     isbn = input("\n Enter your ISBN: ")
     if isbn == "bib":
-      BS.sort(key=lambda book: (book.author, book.title))
+      BS.sort(key=lambda book: (book.author, book.title)) #sorts on author first, title second.
       print("\n Bibliography\n" + "-"*90)
       for i in range(len(BS)):
         print(BS[i])
       print("-"*90)
     elif isbn == "stop":
       break
-    else:
+    else: #scrape the webpage and get the book info 
       f = urlopen('https://www.ottobib.com/isbn/%s/bibtex' % (isbn))
       html = f.read()
       soup = bs(html, 'html.parser')
@@ -44,7 +44,7 @@ def main():
       
   
     
-
+#Parses the scaped string into a format to create the class
 def parse(string):
   str2 = string.splitlines() #split into a list
   str2 = str2[1:len(str2)-1] #take off the end bits 
