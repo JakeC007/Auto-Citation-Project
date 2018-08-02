@@ -3,7 +3,7 @@ This is a little demo that I put togther as I was tired of the free auto citatio
 
 
 
-![Image of Program in use](https://i.imgur.com/rF8ekfP.png)
+![Image of Program in use](https://i.imgur.com/oFeGvvX.png)
 
 
 
