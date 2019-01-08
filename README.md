@@ -19,3 +19,6 @@ I don't have an api key to world cat so I used a work around by building a scrap
 
 8/1/18
 Still not complete--working on a way to output the data  
+
+1/7/2019
+restart apa and rtf
