@@ -44,7 +44,7 @@ def main():
       
   
     
-#Parses the scaped string into a format to create the class
+#Parses the scaped string into a format to create the class.
 def parse(string):
   str2 = string.splitlines() #split into a list
   str2 = str2[1:len(str2)-1] #take off the end bits 
